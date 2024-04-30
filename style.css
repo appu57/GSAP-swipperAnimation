@@ -1,0 +1,68 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: var(--font);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.swiper {
+  width: 100%;
+}
+
+.swiper-wrapper{
+  width: 100%;
+  height: 35em;
+  display: flex;
+  align-items: center;
+}
+
+.card{
+  width: 20em;
+  height: 90%;
+  background-color: #fff;
+  border-radius: 2em;
+  box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+  padding: 2em 1em;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  margin: 0 2em;
+}
+
+.swiper-slide:not(.swiper-slide-active){
+  filter: blur(1px);
+}
+
+
+
+.card-content{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title{
+  font-size: 1.5rem;
+  font-weight: 500;
+  position: relative;
+  top: .2em;
+}
+
+.name{
+  color: var(--color);
+}
+
+
+/* In order to use SWIPPER js make sure first container name is swiper mySwipper next wrapper container name being swiper-wrapper and then the containers that has to be swipped with swiper-slide if we add those then the swipper js is enabled*/
